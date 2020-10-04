@@ -132,10 +132,11 @@ select {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .options label {
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 
 .options input {
