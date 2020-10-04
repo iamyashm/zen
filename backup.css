@@ -1,0 +1,258 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url(images/red.svg), url(images/spacecraft.svg), url(images/blue.svg), url(images/bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 180px, 500px, 250px, 100% 100%;
+    background-position: 50% 10%, 85% 35%, 100% 100%, center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #000324;
+        background-image: url(images/mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.title1 {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+
+.title2 {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: -0.015em;
+}
+
+.subtitle {
+    /* font-family: Nunito Sans; */
+    position: absolute;
+    left: 10%;
+    top: 52%;
+    width: 400px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.025em;
+
+    color: #BFB5CC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.brand {
+    flex: 1;
+    width: 10%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 4%;
+}
+
+.brandname {
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;   
+    margin-right: 3%;
+    font-family: Nunito Sans;
+    font-size: 1.2rem;
+}
+.hamburger {
+    display: none;
+}
+
+.mobilenav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 15%;
+}
+
+.btn-text {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 3px solid #6200DF;
+    box-sizing: border-box;
+    border-radius: 200px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-text:hover {
+    background: #6200DF;
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        margin-top: 5%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-items: flex-end;
+        align-items: center;
+        margin-right: 5%;
+        color: #0A82A3;
+    }
+
+    .mobilenav {
+        display: none;
+        background: rgba(10, 130, 163, 0.22);
+        padding: 2% 0%;
+        margin: 2% 0%;
+        font-size: 0.85rem;
+        font-weight: 200;
+    }
+
+    .mobilelinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobilelinks a {
+        margin-left: 10%;
+        margin-bottom: 2px;
+    }
+
+    .title1, .title2 {
+        font-size: 2rem;
+    }
+
+    .title2 {
+        top: 33%;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        width: 55%;
+        top: 45%;
+        line-height: 160%;
+    }
+    
+    .btn-text {
+        top: 68%;
+        border: 2px solid #0E9BC1;
+        box-sizing: border-box;
+        border-radius: 71.6418px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        color: #0E9BC1;
+    }
+
+        
+    .btn-text:hover {
+        background: #0E9BC1;
+        color: white;
+    }
+
+    .logo {
+        width: 2rem;
+        margin-right: 5%;
+    }
+    
+    .brandname {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+} 
+
+@media only screen and (min-width: 760px) and (max-width: 1200px) {
+    .btn-text {
+        top: 71%;
+        border: 3px solid #0E9BC1;
+        box-sizing: border-box;
+        border-radius: 71.6418px;
+        padding: 8px 18px;
+        font-size: 28px;
+        color: #0E9BC1;
+    }
+
+        
+    .btn-text:hover {
+        background: #0E9BC1;
+        color: white;
+    }
+
+    header {
+        margin-top: 4%;
+    }
+
+    .title1, .title2 {
+        font-size: 76px;
+    }
+
+    .title2 {
+        top: 33%;
+    }
+
+    .subtitle {
+        top: 48%;
+        font-size: 36px;
+        line-height: 130%;
+        width: 60%;
+    }
+
+    .brandname {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .nav {
+        font-size: 24px;
+    }
+
+}
+

@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000324;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 8%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.intro {
+    display: none;
+}
+
+#title, #subtitle {
+    display: none;
+}
+
+#board {
+    font-size: 5vw;
+}
+
+@media only screen and (min-width:1200px) {
+    .intro {
+        display: block;
+        z-index: 1;
+        animation: intro 6s ease-out 1s;
+        color: rgb(75, 213, 238);
+        font-weight: 400;
+        font-size: 2rem;
+        opacity: 0;
+    }
+
+    @keyframes intro {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    p {
+        color: #08d6ffee;
+    }
+
+    #title, #subtitle {
+        display: block;
+    }
+    
+    #board {
+        transform: perspective(300px) rotateX(25deg);
+        transform-origin: 50% 100%;
+        text-align: justify;
+        position: absolute;
+        margin-left: -9em;
+        font-weight: bold;
+        overflow: hidden;
+        font-size: 350%;
+        height: 50em;
+        width: 18em;
+        bottom: 0;
+        left: 50%;
+    }
+
+    #board:after {
+        position: absolute;
+        content: ' ';
+        bottom: 60%;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    #content {
+        animation: scroll 100s linear 9s;
+        position: absolute;
+        top: 100%;
+    }
+
+    #title, #subtitle {
+        text-align: center;
+    }
+
+    @keyframes scroll {
+        0% {
+            top: 100%;
+        }
+        100% {
+            top: -170%;
+        }
+    }
+}
