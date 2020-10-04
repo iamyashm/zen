@@ -33,7 +33,7 @@ main {
     .intro {
         display: block;
         z-index: 1;
-        animation: intro 6s ease-out 1s;
+        animation: intro 3s ease-out 1s;
         color: rgb(75, 213, 238);
         font-weight: 400;
         font-size: 2rem;
@@ -88,7 +88,7 @@ main {
     }
 
     #content {
-        animation: scroll 100s linear 9s;
+        animation: scroll 60s linear 4s;
         position: absolute;
         top: 100%;
     }
